@@ -6,33 +6,66 @@
     width: 100%;
     filter: brightness(30%);
     z-index: -1;
+    display: block;
+    object-fit: cover;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 1.6;
     color: rgb(212, 212, 212);
     background-color: rgb(2, 2, 4);
 
 }
-h1{
+#title{
     font-size: 50px;
     font-weight: 100;
     font-family: 'Griffy', cursive;
 margin-top: 200px;
+animation-delay: 0s;
+-webkit-animation-delay: 0s;
 }
-h2{
+#subtitle{
     font-size: 24px;
     font-weight: 100;
     font-family: 'Griffy', cursive;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
 }
 #quotes{
     max-width:1200px;
     width: 100%;
     margin: 50px auto;
+
 }
 #text{
     font-family: 'Emilys Candy', cursive;
     word-wrap: break-word;
     white-space: pre-wrap;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+}
+h1,h2,p{
+    opacity:0;
+    animation: fadein ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadein ease 4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+     }
+}
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+     }
 }
