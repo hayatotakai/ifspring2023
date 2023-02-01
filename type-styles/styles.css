@@ -28,7 +28,7 @@ h1{
 }
 #settings{
     border:solid gray 1px;
-    width:fit-content;
+    width:300px;
     padding: 20px;
     margin: auto;
 }
