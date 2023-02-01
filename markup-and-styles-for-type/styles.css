@@ -1,0 +1,51 @@
+body{
+    margin: 10%;
+}
+html{
+color: gray;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+    color: black;
+    text-transform: capitalize;
+    text-indent: -1rem;
+    letter-spacing: -0.02em;
+    font-family: "vista-slab", serif;
+font-weight: 700;
+font-style: normal;
+}
+p{
+    font-size:13px;
+    line-height: 1.4;
+}
+sup{
+    font-size: 60%;
+}
+dfn{
+    text-transform: lowercase;
+    font-weight: bold;
+}
+aside{
+    text-align: center;
+    display: block;
+}
+small{
+font-style: italic;
+}
+article{
+    margin: 6rem 0;
+}
+cite{
+    text-align: right;
+
+}
+a{
+    text-decoration: none;
+}
+section{
+    margin: 2.5em 0;
+}
+code{
+color: steelblue;
+}
