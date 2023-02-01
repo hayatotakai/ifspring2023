@@ -12,11 +12,12 @@
 body{
     font-size: 18px;
     line-height: 1.6;
-    color: rgb(212, 212, 212);
+
     background-color: rgb(2, 2, 4);
 
 }
 #title{
+        color: rgb(212, 212, 212);
     font-size: 50px;
     font-weight: 100;
     font-family: 'Griffy', cursive;
@@ -25,6 +26,7 @@ animation-delay: 0s;
 -webkit-animation-delay: 0s;
 }
 #subtitle{
+        color: rgb(212, 212, 212);
     font-size: 24px;
     font-weight: 100;
     font-family: 'Griffy', cursive;
@@ -37,10 +39,12 @@ animation-delay: 0s;
     margin: 50px auto;
 
 }
-#text{
+.text{
     font-family: 'Emilys Candy', cursive;
-    word-wrap: break-word;
-    white-space: pre-wrap;
+    /* word-wrap: break-word;
+    white-space: pre-wrap; */
+height: fit-content;
+margin: 0;
     animation-delay: 2s;
     -webkit-animation-delay: 2s;
 }
@@ -52,6 +56,31 @@ h1,h2,p{
     -webkit-animation: fadein ease 4s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards;
+}
+#ghost-placeholder{
+height:100%;
+width:100%;
+position:absolute;
+top: 0;
+left: 0;
+}
+
+#ghost{
+    opacity:0;
+    animation: ghost ease-in-out 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    -webkit-animation: ghost ease-in-out 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+    position: relative;
+    top:0;
+    height:100%;
+    width:auto;
+    margin: auto;
+    display: block;
 }
 @keyframes fadein {
     0% {
@@ -68,4 +97,73 @@ h1,h2,p{
     100% {
         opacity: 1;
      }
+}
+
+@keyframes ghost {
+    0% {
+        opacity: 0;
+        width:0;
+        height:0;}
+        10%{
+            opacity: 0;
+        
+    } 
+    50% {
+        height:auto;
+        width:100%;
+        opacity: 1;
+     }
+     90%{
+        opacity: 0;
+     }
+    100% {
+        width:0;
+        height:0;
+        opacity: 0;
+     }
+}
+@-webkit-keyframes ghost {
+    0% {
+        opacity: 0;
+        width:0;
+        height:0;}
+        10%{
+            opacity: 0;
+        
+    } 
+    50% {
+        height:auto;
+        width:100%;
+        opacity: 1;
+     }
+     90%{
+        opacity: 0;
+     }
+    100% {
+        width:0;
+        height:0;
+        opacity: 0;
+     }
+}
+
+.Venkman{
+color:rgb(149, 149, 149)
+}
+.Barrett{
+color:rgb(255,150,150)
+}
+.Mayor{
+color:rgb(195, 133, 133)
+}
+.Stantz{
+color:rgb(223, 170, 170)
+}
+.Spengler{
+color:rgb(183, 168, 207)
+}
+.Zeddemore{
+color:rgb(162, 162, 162)
+}
+.narration{
+color:rgb(103, 103, 103)
 }
