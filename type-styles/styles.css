@@ -1,0 +1,22 @@
+body{
+    font-family: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-sans;
+}
+#settings{
+display: flexbox;
+}
+p{
+    position: relative;
+    width: fit-content;
+margin: none;
+display: inline;
+margin-top: 20px;
+}
+input{
+    display: block;
+    margin:20px 0px 20px 0px;
+}
+select{
+    display: block;
+    margin:10px 0px 20px 0px;
+}
+

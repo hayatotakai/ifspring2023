@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="author" content="Hayato Takai" />
+    <meta name="description" content="Type Styles">
+    <meta charset="utf-8">
+    <title>type-styles</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<h1>Type Styles</h1>
+<h2>BlinkMacSystemFont: Adjust the settings below!</h2>
+
+<h3 id="target">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+<div id="settings">
+<p>Font Weight:</p> <a id="font-weight-value">16</a><input id="font-weight" type="range" min="100" max="800" value="16">
+<p>Font Style:</p> 
+<select id="font-style" name="font-style">
+    <option value="normal">Normal</option>
+    <option value="italic">Italic</option>
+    <option value="oblique">Oblique</option>
+  </select>
+<p>Letter Spacing:</p><a id="letter-spacing-value">1</a> <input id="letter-spacing" type="range" min="-4" max="4" value="1">
+<p>Text Transform:</p> 
+<select id="text-transform" name="transform">
+    <option value="none">none</option>
+    <option value="capitalize">capitalize</option>
+    <option value="uppercase">uppercase</option>
+    <option value="lowercase">lowercase</option>
+  </select>
+<p>Text Decoration Line:</p> 
+<select id="text-decoration-line" name="text-decoration-line">
+    <option value="none">none</option>
+    <option value="underline">underline</option>
+    <option value="overline">overline</option>
+    <option value="line-through">line-through</option>
+  </select>
+  <p>Text Decoration Color:</p> 
+<select id="text-decoration-color" name="text-decoration-color">
+    <option value="black">Black</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">green</option>
+  </select>
+  <p>Text Decoration Syle:</p> 
+  <select id="text-decoration-style" name="text-decoration-style">
+      <option value="solid">Solid</option>
+      <option value="double">Double</option>
+      <option value="dotted">Dotted</option>
+      <option value="dashed">Dashed</option>
+      <option value="wavy">Wavy</option>
+    </select>
+    <p>Text Decoration Thickness:</p> <a id="text-decoration-thickness-value">4</a><input id="text-decoration-thickness" type="range" min="1" max="8" value="2">
+<script>
+    var fontWeight = document.getElementById("font-weight");
+    var fontStyle = document.getElementById("font-style");
+    var fontWeightValue = document.getElementById("font-weight-value");
+    var letterSpacing = document.getElementById("letter-spacing");
+    var letterSpacingValue = document.getElementById("letter-spacing-value");
+    var textTransform = document.getElementById("text-transform");
+    var textDecorationLine = document.getElementById("text-decoration-line");
+    var textDecorationColor = document.getElementById("text-decoration-color");
+    var textDecorationStyle = document.getElementById("text-decoration-style");
+    var textDecorationThickness = document.getElementById("text-decoration-thickness");
+    var textDecorationThicknessValue = document.getElementById("text-decoration-thickness-value");
+    var text = document.getElementById("target");
+
+    text.style.fontWeight=fontWeight.value;
+    text.style.fontStyle=fontStyle.value;
+    text.style.letterSpacing=letterSpacing.value;
+    text.style.textTransform=textTransform.value;
+    text.style.textDecorationLine=textDecorationLine.value;
+    text.style.textDecorationColor=textDecorationColor.value;
+    text.style.textDecorationStyle=textDecorationStyle.value;
+    text.style.textDecorationThickness=textDecorationThickness.value;
+
+    fontWeightValue.innerHTML = fontWeight.value;
+    letterSpacingValue.innerHTML = letterSpacing.value;
+    textDecorationThicknessValue.innerHTML = letterSpacing.value;
+
+
+    fontWeight.addEventListener('input', evt0 => {
+    text.style.fontWeight=(fontWeight.value);
+    fontWeightValue.innerHTML = fontWeight.value;})
+
+    fontStyle.addEventListener('input', evt1 => {
+    text.style.fontStyle=(fontStyle.value);})
+
+    textTransform.addEventListener('input', evt2 => {
+    text.style.textTransform=(textTransform.value);})
+
+    letterSpacing.addEventListener('input', evt3 => {
+    text.style.letterSpacing=(letterSpacing.value+"px");
+    letterSpacingValue.innerHTML = letterSpacing.value;})
+    
+    textDecorationLine.addEventListener('input', evt4 => {
+    text.style.textDecorationLine=(textDecorationLine.value);})
+    
+    textDecorationColor.addEventListener('input', evt5 => {
+    text.style.textDecorationColor=(textDecorationColor.value);})
+
+    textDecorationStyle.addEventListener('input', evt6 => {
+    text.style.textDecorationStyle=(textDecorationStyle.value);})
+    
+    textDecorationThickness.addEventListener('input', evt7 => {
+    text.style.textDecorationThickness=(textDecorationThickness.value+"px");
+    textDecorationThicknessValue.innerHTML = textDecorationThickness.value;})
+    </script>
+</div>
+
+    
+
+</body>
