@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Classes and Pseudo Elements</title>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 10%;
+        }
+
+        section {
+            margin: 4rem 0;
+            position: relative;
+        }
+
+        code {
+            color: steelblue;
+            font-size: 1.2em;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            display: block;
+        }
+
+        a {
+            color: green;
+        }
+
+        a:hover {
+            color: darkgreen;
+            text-decoration: none;
+        }
+
+        a:active {
+            text-decoration: overline;
+        }
+
+        code.html::before {
+            content: "<";
+        }
+
+        code.html::after {
+            content: ">"
+        }
+
+        code.css::before {
+            content: 'css:';
+            text-transform: uppercase;
+            color: #fff;
+            background-color: steelblue;
+            margin-right: 1em;
+            padding: 2px 8px 2px 8px;
+            font-size: 0.8em;
+        }
+
+        section::before {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>Pseudo Classes</h1>
+        <p>There are some contexts or states that elements may have that are common enough that the browser provides
+            'implied' classes on those elements. These <dfn>pseudo-classes</dfn> are best illustrated by example. An
+            <code>a href="#"</code> element, for instance, has a number of useful pseudo-classes depending on the state
+            of user-interaction.</p>
+        <ul>
+            <li><code>:visited</code></li>
+            <li><code>:hover</code></li>
+            <li><code>:active</code></li>
+        </ul>
+        <p>An example link to work with: <a href="http://stackoverflow.com">StackOverflow.com</a></p>
+    </section>
+
+    <section>
+        <h1>Pseudo Elements</h1>
+        <p>To some extent, we can use CSS to create elements on the page that are not actually there in our HTML
+            source.These <dfn>pseudo-elements</dfn> should generally be used only for styling, but can be extremely
+            useful as a way to avoid putting extra tags on the page solely for creating visual style.</p>
+        <ul>
+            <li><code>::before</code></li>
+            <li><code>::after</code></li>
+        </ul>
+        <p>An example html tag: <code class="html">section</code></p>
+        <p>An example css rule: <code class="css">p { margin: 1em 0; }</code></p>
+        <p>How could we use these to add a &lt; &gt; around html code examples?</p>
+        <p>How could we use these to add a [css] label before css code examples?</p>
+        <p>How might we use pseudo elements to add a stylistic flourish to each section of this document?</p>
+    </section>
+
+</body>
+
+</html>
