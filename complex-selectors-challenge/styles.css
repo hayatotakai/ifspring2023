@@ -12,4 +12,4 @@ img{width:100%;}
 .cast div:nth-of-type(odd){font-weight: bold;}
 .cast div:nth-of-type(even){font-style: italic;}
 .seasons li:nth-child(9)::after{content:'*';}
-.seasons ul:after{display:block;content:"* Final Season";font-size: 0.7rem; color: #999;}
+#game-of-thrones .seasons ul:after{display:block;content:"* Final Season";font-size: 0.7rem; color: #999;}
