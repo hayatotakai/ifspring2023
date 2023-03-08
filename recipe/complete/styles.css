@@ -100,6 +100,8 @@ p{
   font-weight: 200;
   font-size: 18px;
   text-decoration: none;
+}img{
+  pointer-events: none;
 }
 input{
   /* margin-top: 10px;
@@ -422,6 +424,25 @@ outline: none;
   #step-menu2{
     display: none;
     }
+    footer{
+      height: fit-content;
+      width:100%;
+    }
+    footer p{
+    margin: 20px;
+    }
+    #footer-text{
+      position: relative;
+      display: block;
+      bottom: 0px;
+      height: fit-content;
+      width:80%;
+      text-align: left;
+    margin: auto;
+    background-color: rgba(240,240,240,0.4);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    }
 @media (max-width: 1000px) {
   body{
   display:block;}
@@ -514,6 +535,10 @@ backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
 padding-top: 10px;
 padding-bottom: 20px;
+  }
+  #footer-text{
+    bottom: 0px;
+    width:90%;
   }
     }
  
