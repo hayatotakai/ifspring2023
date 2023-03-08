@@ -48,33 +48,41 @@
         </div>
     </div>
         <div id="menu">
-            <h4> Ingredients</h4>
+            <div id="menu-title">
+            <h4> Ingredients: </h4>
+            <form class="serving-size" >
+<!-- <div class="change-servings" id="increase" onclick="increaseServings()"></div> -->
+<input type="number" id="servings" value="8" min="1" max="18">
+<!-- <div class="change-servings" id="decrease" onclick="decreaseServings()"></div> -->
+<p id="serving-text">  Servings</p>         
+</form>
+</div>
             <form >
-                <label class="container" for="ingredient1">6 cups apples peeled and sliced
+                <label class="container" for="ingredient1"><a id="num-apples">8</a> cups apples peeled and sliced
                     <input type="checkbox" id="ingredient1" name="ingredient1">
                     <span class="custom-checkmark"></span>
                 </label><br>
-                <label class="container" for="ingredient2">Pie crust
+                <label class="container" for="ingredient2"><a id="num-crust">1</a> Puff Pastry
                     <input type="checkbox" id="ingredient2" name="ingredient2">
                     <span class="custom-checkmark"></span>
                 </label><br>
-                <label class="container" for="ingredient3">3/4 cups sugar
+                <label class="container" for="ingredient3"><a id="num-sugar">1</a> cups sugar
                     <input type="checkbox" id="ingredient3" name="ingredient3">
                     <span class="custom-checkmark"></span>
                 </label><br>
-                <label class="container" for="ingredient4">2 tablespoons all purpose flour
+                <label class="container" for="ingredient4"><a id="num-flour">2</a> tablespoons all purpose flour
                     <input type="checkbox" id="ingredient4" name="ingredient4">
                     <span class="custom-checkmark"></span>
                 </label><br>
-                <label class="container" for="ingredient5">1/4 teaspoons salt
+                <label class="container" for="ingredient5"><a id="num-salt">1/4</a> teaspoons salt
                     <input type="checkbox" id="ingredient5" name="ingredient5">
                     <span class="custom-checkmark"></span>
                 </label><br>
-                <label class="container" for="ingredient6">1/8 teaspoons ground nutmeg
+                <label class="container" for="ingredient6"><a id="num-nutmeg">1/8</a> teaspoons ground nutmeg
                     <input type="checkbox" id="ingredient6" name="ingredient6">
                     <span class="custom-checkmark"></span>
                 </label><br>
-                <label class="container" for="ingredient7">1 teaspoons lemon juice
+                <label class="container" for="ingredient7"><a id="num-lemon">1</a> teaspoons lemon juice
                     <input type="checkbox" id="ingredient7" name="ingredient7">
                     <span class="custom-checkmark"></span>
                 </label><br>
@@ -133,5 +141,10 @@
             </div>
         </div>
     </div>
+    <footer>
+
+
+    </footer>
     <script src="js/script.js" type="module"></script>
+    <script src="js/scriptpt.js" type="module"></script>
 </body>
