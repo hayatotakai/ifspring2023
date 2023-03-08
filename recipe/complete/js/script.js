@@ -1,11 +1,11 @@
 
-import * as THREE from '/recipe-test/js/three.module.js';
+import * as THREE from '../js/three.module.js';
 
-import { GLTFLoader } from '/recipe-test/js/GLTFLoader.js';
-import { RGBELoader } from '/recipe-test/js/RGBELoader.js';
+import { GLTFLoader } from '../js/GLTFLoader.js';
+import { RGBELoader } from '../js/RGBELoader.js';
 let camera = [], scene = [], renderer = [], obj = [], manager = [], progress = [], box = [], container = [], progressPercent = [], progressBar = [], ring = [], light = [], ambient = [];
 for (var i = 0; i < 5; i++) {
-  init(i, 4, '/recipe-test/adams_place_bridge_1k.hdr', true, '/recipe-test/scene.glb');
+  init(i, 4, '../complete/adams_place_bridge_1k.hdr', true, '../complete/scene.glb');
   //"Red Apple" (https://skfb.ly/6WTZv) by RPSebb is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/) - modified by Hayato Takai
 }
 function init(iter, ring_zoom, env, backdrop, model) {
