@@ -26,126 +26,355 @@ h1 {
     text-align: center;
 }
 
-
-
-a#btn_spotify {
-    display: inline-block;
-    height: 50px;
-    box-sizing: border-box;
-    border-radius: 25px;
+#fitbit-div {
+    position: relative;
+    border: 1px solid #444;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
     margin: auto;
-    margin-top: 100px;
-    padding: 10px 40px 0 40px;
-    background-color: #2ebd59;
-    border: 2px solid #2ebd59;
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all .5s;
+    top: 25px;
+    background-color: #F4FAFB
 }
 
-a#btn_spotify:hover {
-    background-color: #fff;
-    border: 2px solid #000;
+a#btn_fitbit svg {
+    position: relative;
+    height: 150px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+a#btn_fitbit svg .fitbit-text {
+    fill: #142529;
+}
+
+a#btn_fitbit svg .fitbit-text-dot {
+    fill: #142529;
+}
+
+a#btn_fitbit svg .fitbit-dark {
+    fill: #2ebec0;
+}
+
+a#btn_fitbit svg .fitbit-light {
+    fill: #2ebec0;
+}
+
+a#btn_fitbit svg:hover .fitbit-dark {
+    fill: #142529;
+    transition: all 1s;
+}
+
+a#btn_fitbit svg:hover .fitbit-text-dot {
+    fill: #2ebec0;
+    transition: all 1s;
+}
+
+a#btn_fitbit svg:hover #fitbit-dark-1 {
+    transition-delay: 0s;
+}
+
+a#btn_fitbit svg:hover #fitbit-dark-2 {
+    transition-delay: 0.2s;
+}
+
+a#btn_fitbit svg:hover #fitbit-dark-3 {
+    transition-delay: 0.4s;
+}
+
+a#btn_fitbit svg:hover #fitbit-dark-4 {
+    transition-delay: 0.6s;
+}
+
+a#btn_fitbit svg:hover #fitbit-dark-5 {
+    transition-delay: 0.8s;
+}
+
+@font-face {
+    font-family: cartoon-slam;
+    src: url(cartoon-slam.ttf);
+}
+
+#btn_cn {
+    position: relative;
+    top: 80px;
+    color: transparent;
+}
+
+#btn_cn button {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: none;
+    -webkit-perspective: 250px;
+    perspective: 250px;
+    background-color: transparent;
+}
+
+#btn_cn span {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.cartoon span {
+    background: rgb(255, 255, 255);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+}
+
+.network span {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+}
+
+
+a#btn_cn p {
+    font-family: cartoon-slam;
+    position: relative;
+    font-size: 50px;
+    top: -45px;
+    font-weight: 800;
+}
+
+a#btn_cn:hover .cartoon .CN-after {
+    color: transparent;
+}
+
+a#btn_cn:hover .network .CN-after {
+    color: transparent;
+}
+
+a#btn_cn .cartoon .CN-after {
     color: #000;
 }
 
-a#btn_amazon {
-    display: block;
-    width: 100px;
-    height: 100px;
-    box-sizing: border-box;
-    border-radius: 50px;
-    margin: auto;
-    margin-top: 75px;
-    padding-top: 8px;
-    background-color: #232f3e;
-    color: #fff;
-    text-align: center;
-    font-size: 60px;
-    transition: all .2s;
+a#btn_cn .cartoon .CN-before {
+    color: #FFF;
 }
 
-a#btn_amazon:hover {
-    background-color: #fc9a18;
+a#btn_cn .network .CN-after {
+    color: #FFF;
 }
 
-a#btn_twitter {
-    display: inline-block;
-    height: 40px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin: auto;
-    margin-top: 105px;
-    padding: 10px 30px 0 30px;
-    background-color: #56cdf1;
-    color: #fff;
-    font-size: 18px;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    text-decoration: none;
+a#btn_cn .network .CN-before {
+    color: #000;
 }
 
-a#btn_twitter:hover {
-
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
-    background: rgb(46, 191, 236);
-    /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(46, 191, 236, 1) 0%, rgba(40, 165, 203, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(46, 191, 236, 1) 0%, rgba(40, 165, 203, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(46, 191, 236, 1) 0%, rgba(40, 165, 203, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2ebfec', endColorstr='#28a5cb', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
-
+.cartoon span:nth-child(1) {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+    box-shadow: none;
 }
 
-a#btn_indiegogo {
-    display: inline-block;
+.cartoon span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+
+a#btn_cn:hover .cartoon span:nth-child(1) {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+a#btn_cn:hover .cartoon span:nth-child(2) {
+    color: transparent;
+    box-shadow: none;
+    background-color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.network span:nth-child(1) {
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.network span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+
+a#btn_cn:hover .network span:nth-child(1) {
+    background: rgb(255, 255, 255);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+a#btn_cn:hover .network span:nth-child(2) {
+    color: transparent;
+    box-shadow: none;
+    background-color: transparent;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+}
+
+.a8f45747-75cc-4814-84a0-abe1693f182d {
+    fill: transparent;
+}
+
+.a85f7fed-3e89-4434-8e0e-7f4801ecbea4 {
+    fill: #231f20;
+}
+
+a#btn_foreflight svg {
     position: relative;
+    height: 150px;
     margin: auto;
-    margin-top: 100px;
-    padding: 8px 16px;
-    background-color: #fff;
-    color: #eb1478;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: -2px;
-    transition: all .2s;
+    margin-top: 25px;
 }
 
-a#btn_indiegogo:before {
-    content: "";
+#foreflight-img {
+    width: 120px;
+    height: 120px;
     display: block;
-    width: 0;
-    height: 0;
-    z-index: 1;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: #eb1478;
-    transition: all .5s;
+    left: -10px;
+    top: -10px;
+
 }
 
-a#btn_indiegogo:hover {
-    color: #fff;
+#foreflight-div {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    top: -116px;
+    left: 92px;
+    z-index: -1;
+
+
 }
 
-a#btn_indiegogo:hover:before {
+.button_filter {
+    position: absolute;
     width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
+    background-color: rgb(255, 255, 255);
+    opacity: 50%;
+    z-index: 5;
+    transition: 0.5s;
 }
 
-a#btn_indiegogo span {
-    position: relative;
-    z-index: 10;
+a#btn_foreflight:hover .button_filter {
+    background-color: #3498db;
+    ;
+    opacity: 100%;
+
 }
+#cola-container {
+    background-color: black;
+border: 1px solid black;
+width:200px;
+height:200px;
+margin: auto;
+box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+7px 7px 20px 0px rgba(0,0,0,.1),
+4px 4px 5px 0px rgba(0,0,0,.1);
+}
+a#btn_cola svg {
+    top:20px;
+    position: relative;
+    width: 150px;
+    height:150px;
+transition: 1s;
+}
+a#btn_cola:hover svg {
+    -webkit-transform: rotateX(720deg);
+    -moz-transform: rotateX(720deg);
+    transform: rotateX(720deg);
+    transition: 2s ease;
+}
+.bd68e0a3-8319-4643-acad-2dbd93bbae40 {
+    fill: red;
+}
+
+.bcd4748e-8473-4a3f-8e3a-28a2802481c7 {
+    fill: #df0000;
+}
+
+.b089efa1-f599-4efb-8309-b3d8709c6d92 {
+    fill: #fff;
+}
+
+#apple-container{
+    border: 1px solid #444;
+    width:200px;
+    height:200px;
+    background-color: #FFFFFF;
+    margin: auto;
+    transition: 0.5s;
+}
+#apple-container:hover{
+    background-color: #000000;
+}
+#apple-container svg{
+    position: relative;
+    width:150px;
+    height:150px;
+    margin: auto;
+    top:20px;
+}
+#apple-container .a93e2289-b721-4fce-b8a4-80aadf8df1c8{
+    fill: #7D7D7D;
+  }
+  #apple-container .ba1446d0-e02b-4a78-9a5b-daeffe8e065b{
+      fill: transparent;
+    }
+    #apple-container .aaf84b73-84c0-4028-8d04-ea479d275598{
+        fill: transparent;
+      }
+#apple-container:hover .a93e2289-b721-4fce-b8a4-80aadf8df1c8{
+  fill: #000000;
+}
+#apple-container:hover .ba1446d0-e02b-4a78-9a5b-daeffe8e065b{
+    fill: url(#b13a96b4-32f1-4c09-81d1-7b0b423483e5);  }
+
+    #apple-container:hover .aaf84b73-84c0-4028-8d04-ea479d275598 {
+        fill: url(#a7e870de-c0e4-487f-bcc1-e04051472a20);
+    }
