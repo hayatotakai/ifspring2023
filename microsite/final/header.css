@@ -1,0 +1,271 @@
+:root{
+    --orange:#f58954;
+    --cream: rgba(247, 237, 212, 1);
+    --header-height:500px;
+}
+header {
+    width: 100%;
+    z-index: 99999999999999999999999;
+  }
+  #mainHeader{
+    z-index: 999999;
+    height:70px;
+  }
+  #navbar {
+    overflow-x: hidden;
+    padding: 0; 
+    /* // transition: 0.4s; Adds a transition effect when the padding is decreased */
+    position: fixed !important;
+    margin: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    height:100px;
+    background-color: transparent;
+  }
+  #header_color{
+    position: fixed;
+    left:0;
+    top:-500px;
+    width: 100%;
+    /* height:calc(var(--header_height) + 500px); */
+    /* background-color: var(--wave-4); */
+    opacity: 70%;
+    z-index: 999999;
+
+    }
+  #navbar-contents {
+    height: fit-content;
+    width: 100%;
+    z-index: 9999999;
+    max-width: 2000px;
+    display:flex;
+    z-index: 9999999;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 5px);
+    transform: rotate(-45deg) translate(-3px, 6px);
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -7px);
+    transform: rotate(45deg) translate(-3px, -7px);
+  }
+  #open-nav {
+    cursor: context-menu;
+    position: absolute;
+    left: 20px;
+    width: fit-content;
+    z-index: 999;
+    margin: 15px auto;
+  }
+  #logo a {
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    margin: 0;
+    width: 200px;
+    height: fit-content;
+    text-align: center;
+    font-family: 'Academy Engraved LET', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    transition-delay: 0.2s;
+    transition: 0.2s;
+}
+h1 a{
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+#logo a:hover{
+    font-style: normal;
+    text-decoration: none;
+    color: var(--orange);
+}
+  #logo {
+    top:20px;
+    position:absolute;
+    font-weight: 300;
+    font-size: 22px !important;
+    width: 300px;
+    height: fit-content;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    z-index: 999;
+    left: calc(50% - 150px);
+  }
+  
+  #navbar-categories {
+    position: absolute;
+    width: 100%;
+  margin-top: 45px;
+    left: 0;
+    display: flex;
+    height:fit-content;
+    z-index: 9999999;
+  
+  }
+  
+
+  
+  #links {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    margin: 10px auto;
+    font-weight: 300;
+    text-align: center;
+  }
+  .link-buttons {
+    width: fit-content;
+    transition: 0.3s;
+  }
+  .link-container a{
+    text-decoration: none;
+font-size: 28px;
+position: relative;
+width:100%;
+height:100%;
+text-align: center;
+font-weight: 100;
+color: black;
+transition-delay: 1s;
+transition: 0.2s;
+  }
+  .link-container a:hover{
+    color: var(--orange);
+  }
+  .link-container {
+    float: left;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 30px;
+    margin: 0px 20px;
+  }
+
+  @media screen and (min-width: 750px) {
+    #links {
+      display: block;
+    }
+    #open-nav{
+      display:none;
+    }
+    #mainHeader{
+        height:100px;
+      }
+  }
+  
+  .link-buttons:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    width:fit-content;
+    position: relative;
+    left: 50%;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    background: var(--orange);
+  }
+  .link-buttons:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  
+
+  #side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: var(--cream);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 70px;
+    text-align: center;
+    opacity: 0;
+
+  }
+  
+  .side-buttons {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    width: fit-content;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .side-container {
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .side-buttons:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    position: relative;
+    left: 50%;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    background:black;
+  }
+  .side-buttons:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  @media screen and (max-height: 450px) {
+    #side-nav {
+      padding-top: 45px;
+    }
+    #side-nav a {
+      font-size: 18px;
+    }
+  }
+  
+  .nav-hover {
+    color: black;
+  }
+  .menu-hover {
+    background-color: black;
+  }
+ 
+  #mode {
+    background-color: transparent;
+    position: absolute;
+    overflow: hidden;
+    width: 36px;
+    height: 40px;
+    right:25px;
+    z-index: 999;
+    border: none;
+    margin: 10px auto;
+  }
+  
