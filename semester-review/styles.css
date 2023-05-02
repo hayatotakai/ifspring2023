@@ -1,0 +1,130 @@
+*{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100vw;
+    max-width: 100%;
+    line-height: 1;
+    font-family: silva-text, sans-serif;
+    font-style: normal;
+        scroll-behavior: smooth;
+    cursor: default;
+    background-color: rgb(189, 189, 189);
+z-index: -9999;
+overflow-x: hidden;
+display: flex;
+  flex-wrap:wrap;
+}
+h1{
+    position: relative;
+    top:50px;
+    width:100%;
+height:120px;
+text-align: center;
+
+}
+a{
+    position: absolute;
+    width:100%;
+    height:100%;
+    cursor:pointer;
+    z-index: 9;
+}
+.container{
+    width: 520px;
+    height: 330px;
+    overflow: visible;
+}
+.background{
+    margin: 10px;
+  position: relative;
+  flex: 270px 0 350px;
+  width: 500px;
+  height: 280px;
+  background-color: rgb(255, 255, 255);
+  overflow: visible;
+  border-radius: 10px;
+transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  border:solid 1px rgb(155, 155, 155);
+  /* filter: brightness(40%); */
+  backdrop-filter: brightness(40%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.background:hover{
+    width: 510px;
+  height: 290px;
+  border:solid 1px #fff;
+  translate: -5px -5px;
+  filter: brightness(100%);
+  -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.85);
+-moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.85);
+box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.85);
+}
+#recipe{
+    background-image: url("recipe.png");
+}
+#microsite{
+    background-image: url("microsite.png");
+}
+#personal{
+    background-image: url("personal.png");
+}
+h2{
+    position:absolute;
+    color: #fff;
+    bottom:0px;
+    right:20px;
+    transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+z-index: 999;
+}
+.filter{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+    backdrop-filter: brightness(75%);
+    z-index: 1;
+    transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.background:hover .filter{
+    backdrop-filter: brightness(100%);
+}
+#personal:hover h2{
+    color: #000;}
+    #recipe:hover h2{
+        color: #000;}
+
+        @media screen and (max-width: 750px) {
+            .background{
+                width: 90vw;
+              height: 50vw;
+              margin: auto;}
+              .container{
+                width: 100vw;
+                height: 60vw;
+                overflow: visible;
+                margin: auto;
+            }
+            body{
+                display:block;
+  flex-wrap:nowrap;
+            }
+            .filter{
+                display: none;
+            }
+
+            #personal h2{
+                color: #000;}
+                #recipe h2{
+                    color: #000;}
+        }
